@@ -18,7 +18,7 @@ Everything works, except:
  
 
 ## My Setup:
-- E3-1230 v5 3,4 GHz Quad-Core Intel Xeon
+- Intel Xeon E3-1230 v5 3,4 GHz Quad-Core
 - Sapphire AMD RX570 8GB Mining Edition
 - M.2 1TB Samsung EVO SSD
 - Native A1398 Macbook Airport Card (PCIe dongle)
