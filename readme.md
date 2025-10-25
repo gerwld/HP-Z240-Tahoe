@@ -22,9 +22,10 @@ Everything works, except:
 - Sapphire AMD RX570 8GB Mining Edition
 - M.2 1TB Samsung EVO SSD
 - Native A1398 Macbook Airport Card (PCIe dongle)
+- be quiet! System Power 10 450W 80 Plus Bronze
 
 
-## Installation:
+## Installation: 
 - Install OpenCore on your pendrive [(How to)](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer).
 - Remove the EFI folder and replace it with the one from this build (do not merge!).
 - Choose the config.plist (4k, 1080). Rename it to config.plist.
