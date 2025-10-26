@@ -1,7 +1,7 @@
 
 # HP-Z240-Tahoe
 
-> Working HP Z240 MT Hackintosh OpenCore Config for macOS Tahoe. Lower OS versions have not been tested but may work. 
+> Working HP Z240 MT Hackintosh OpenCore configuration for macOS Tahoe. For older macOS versions,<br> follow the instructions in this [repository](https://github.com/gerwld/HP-Z240-Sonoma). 
 Based on [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg) and an old fork from [NOTNlCE-OpenCore](https://github.com/NOTNlICE/HPz240-OpenCore).
 
 <img width="1680" alt="preview 3" src="https://github.com/user-attachments/assets/c24a7870-3c55-4c11-a162-d6bc164025c0" />
