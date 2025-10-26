@@ -1,16 +1,21 @@
 
-# HP-Z240-Sonoma
+# HP-Z240-Tahoe
 
-> Working HP Z240 MT Hackintosh OpenCore Config for macOS Monterey (up to Sequoia). Lower OS versions have not been tested but may work. Higher versions might also be compatible.
-Based on [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg) and an old fork from [NOTNlCE-OpenCore](https://github.com/NOTNlICE/XPS-9560-OpenCore).
+> Working HP Z240 MT Hackintosh OpenCore Config for macOS Tahoe. Lower OS versions have not been tested but may work. 
+Based on [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg) and an old fork from [NOTNlCE-OpenCore](https://github.com/NOTNlICE/HPz240-OpenCore).
 
-<img width="1680" alt="res" src="https://github.com/user-attachments/assets/5efe70cb-44b2-45e7-a536-f0435a1d2fa6">
+<img width="1680" alt="preview 3" src="https://github.com/user-attachments/assets/c24a7870-3c55-4c11-a162-d6bc164025c0" />
+<details>
+<summary>Click to expand more screenshots</summary>
+ <img width="1680" alt="preview" src="https://github.com/user-attachments/assets/56f1020f-4273-4c01-a853-02e7cb64a2d2" />
+ <img width="1680" alt="preview 2" src="https://github.com/user-attachments/assets/77c65bed-ddde-40d0-8f0a-b0b9b797e6df" />
+</details>
 
 ## Core features:
-- Fixed common issues with EverythingGreen for Coffee Lake iGPUs
+- Removed EverythingGreen, as it does not officially support macOS 26 as of Oct 26, 2025.
 - iGPU / Xeon E3-1XXX support.
 - Updated all kernel extensions to the latest versions.
-- Updated OpenCore to `1.0.0`.
+- Updated OpenCore to `1.0.5`.
 
 ## What works:
 Everything works, except:
@@ -21,7 +26,7 @@ Everything works, except:
 - Intel Xeon E3-1230 v5 3,4 GHz Quad-Core
 - Sapphire AMD RX570 8GB Mining Edition
 - M.2 1TB Samsung EVO SSD
-- Native A1398 Macbook Airport Card (PCIe dongle)
+- Native A1398 Macbook BCM943xx Airport Card (PCIe dongle)
 - be quiet! System Power 10 450W 80 Plus Bronze
 
 
@@ -37,8 +42,8 @@ Everything works, except:
 - Plug in your macOS installation drive. You can find a tutorial on how to create it [here](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer).
 - Boot, select your installer, and format your drive to APFS. At least 60GB is required. If you plan to add Windows later, create an ExFat volume. Also, dont forget to dump your Windows EFI (Optional, but good to have)
 - Disable Verbose `-v` arg after successful installation in `config.plist` (optional).
-- Generate <B>SMBIOS</B>:<br>
-    `SystemSerialNumber`, `Board Serial`, `Apple ROM`, and `SystemUUID` and set them in `config.plist` (without these, iCloud and AppStore won't work).
+- Generate <B>SMBIOS</B>:<br> 
+    `SystemSerialNumber`, `Board Serial`, `Apple ROM`, and `SystemUUID` and set them in `config.plist` Without these, iCloud and AppStore won't work. The easiest way to do this is by using [Opencore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/).
 
 ## Warning:
 
